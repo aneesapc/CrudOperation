@@ -1,0 +1,18 @@
+<div class="page">
+    <div class="card">
+        <div class="title">Creating Consumer</div>
+        <div class="InputConsumerField">
+            <label>Email:</label><br/>
+            <input placeholder = "Email" class = "InputField" [(ngModel)] = "consumerEmail"/>
+        </div>
+        <div class="InputConsumerField">
+            <label>Username:</label><br/>
+            <input placeholder = "Username" class = "InputField" [(ngModel)] = "consumerUsername"/>
+        </div>     
+        <div class="InputConsumerField">
+            <label>Phone Number</label><br/>
+            <input placeholder = "PhoneNumber" class = "InputField" [(ngModel)] = "consumerPhoneNumber"/>
+        </div>     
+        <button (click) = "saveConsumer()" class="Button SaveButton">Save</button> 
+    </div>
+</div> 

@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: boreder-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background: whitesmoke;
+}
+.page {
+    
+    margin: 1em;
+    }
+    
+.card {
+    background-color:white;
+    padding:1em;
+    border:4px solid black;
+    border-radius: 4 px;
+    margin-right: 1em;
+}
+
+.title {
+    margin-top:1em;
+    font-size:2em;
+}
+
+.InputField {
+    font-size: 1em;
+    border-radius: 1px;
+    border: 2px solid darkgrey;
+    padding: 1em;
+    outline: none !important;
+}
+
+.Button {
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding: 1em;
+    margin-left: .2em;
+    outline: none !important;
+}
+
+.Button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.Button:hover{
+    border: 2px solid lightgrey;
+    color: lightgrey;
+}
+
+.ConsumerField{
+    margin-top: 1em;
+    font-size: 1.5em;
+    width: 100%;
+    height: 1em;
+    display: inline-block;
+}
+.InputConsumerField{
+    margin-top: 1em;
+}

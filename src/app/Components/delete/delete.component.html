@@ -1,0 +1,32 @@
+<div class="page">
+    <div class="card" *ngIf = "deletingConsumer">
+        <div class="title">Deleting Consumer Information         
+        </div>
+        <div class="ConsumerField">
+            <label>Email:</label>
+            <p>{{ deletingConsumer.email }}</p>
+        </div>
+        <div class="ConsumerField">
+            <label>Created At:</label>
+            <p>{{ deletingConsumer.createdAt.toString() }}</p>
+        </div>
+        <div class="ConsumerField">
+            <label>Name:</label>
+            <p>{{ deletingConsumer.username }}</p>
+        </div>
+        <div class="ConsumerField">
+            <label>Phone Number:</label>
+            <p>{{ deletingConsumer.phoneNumber }}</p>
+        </div>
+        <div class="ConsumerField">
+            <label>Id:</label>
+            <p>{{ deletingConsumer.id }}</p>
+        </div>        
+        <button class="Button DeleteButton" (click) = "deleteConsumer()">Delete</button>
+    </div>
+    <div class="Card">
+        <div class="title">Search For A Consumer To Delete</div>
+        <input class="InputField" [(ngModel)] = "toSearchConsumerEmail" placeholder="ConsumerEmail">
+        <button (click) = "searchConsumer()" class = "Button">Search</button>
+    </div>
+</div>
